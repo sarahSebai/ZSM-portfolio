@@ -20,3 +20,120 @@
 .title a:hover, .title a:focus, .title a:active {
   text-decoration: underline;
 }
+
+
+
+/* .textcontainer {
+  font-family: 'Baloo Thambi', cursive;
+  font-size: 4.5rem;
+  text-transform: uppercase;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.1rem;
+}
+
+.letter {
+  color: #000;
+  opacity: 0.1;
+  text-shadow: none;
+  animation: glowLoop 4s ease-in-out infinite;
+  animation-delay: var(--delay);
+  --glow-color: #9333ea;
+}
+
+/* Animation en boucle */
+/* @keyframes glowLoop {
+  0% {
+    color: #000;
+    opacity: 0.1;
+    text-shadow: none;
+  }
+  30% {
+    opacity: 1;
+    color: var(--glow-color);
+    text-shadow:
+      0 0 5px var(--glow-color),
+      0 0 10px var(--glow-color),
+      0 0 20px var(--glow-color);
+  }
+  60% {
+    color: #fff;
+    text-shadow:
+      0 0 8px var(--glow-color),
+      0 0 16px var(--glow-color),
+      0 0 24px var(--glow-color);
+  }
+  100% {
+    color: #000;
+    opacity: 0.1;
+    text-shadow: none;
+  }
+} */
+.textcontainer {
+  font-family: 'VT323', sans-serif;;
+  font-size: 4.5rem;
+  text-transform: uppercase;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.1rem;
+}
+
+.letter {
+  color: #000;
+  opacity: 0.1;
+  text-shadow: none;
+  animation: flickerGlow 4s infinite ease-in-out;
+  animation-delay: var(--delay);
+  --glow-color: #9333ea;
+}
+
+@keyframes flickerGlow {
+  0% {
+    opacity: 0.1;
+    color: #000;
+    text-shadow: none;
+  }
+
+  10% {
+    opacity: 0.3;
+  }
+
+  20% {
+    opacity: 0.6;
+    color: var(--glow-color);
+    text-shadow: 0 0 5px var(--glow-color);
+  }
+
+  25% {
+    opacity: 0.1;
+    color: #000;
+    text-shadow: none;
+  }
+
+  35% {
+    opacity: 1;
+    color: var(--glow-color);
+    text-shadow:
+      0 0 5px var(--glow-color),
+      0 0 15px var(--glow-color),
+      0 0 30px var(--glow-color);
+  }
+
+  60% {
+    opacity: 0.7;
+  }
+
+  80% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0.1;
+    color: #000;
+    text-shadow: none;
+  }
+}
+
+
